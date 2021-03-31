@@ -1,0 +1,190 @@
+header
+  background-color: $header-back
+.navbar
+  display: flex
+  justify-content: space-between
+  height: 100px
+  align-items: center
+  font-family: Open Sans
+  font-style: normal
+  font-weight: 600
+  font-size: 16px
+  line-height: 22px
+  color: $dark-text
+  &__logo
+    margin-right: 10px
+    min-width: 90px
+    min-height: 28px
+  &__text-container
+    display: flex
+    width: 600px
+    justify-content: space-between
+    align-items: center
+
+  &-menu
+    padding: 0
+    margin: 0
+    &__item
+      vertical-align: middle
+      max-width: 115px
+      display: inline-block
+      margin: 0 17px 0 0
+      position: relative
+      &:hover .navbar-submenu
+        display: block
+        background-color:
+      &:hover .navbar-menu__arrow
+        -moz-transform: rotate(180deg)
+        -ms-transform: rotate(180deg)
+        -webkit-transform: rotate(180deg)
+        -o-transform: rotate(180deg)
+        transform: rotate(180deg)
+        -o-transition: all 0.3s ease
+        -moz-transition: all 0.3s ease
+        -webkit-transition: all 0.3s ease
+        transition: all 0.3s ease
+    &__link
+      padding: 0 5px 0 5px
+      display: block
+      width: 100%
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      color: $dark-text
+    &__link-arrow
+      display: flex
+    &__arrow
+      padding: 0 2px
+      -o-transition: all 0.3s ease
+      -moz-transition: all 0.3s ease
+      -webkit-transition: all 0.3s ease
+      transition: all 0.3s ease
+
+  &-submenu
+    display: none
+    list-style: none
+    margin: 0
+    padding: 0
+    position: absolute
+    &__item
+      max-width: 100px
+      display: block
+      margin: 0
+      position: relative
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+    &__link
+      display: block
+      padding: 0 0 0 5px
+      width: 100%
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      color: $dark-text
+  &__button
+    height: 48px
+    width: 131px
+    font-weight: bold
+    border-radius: 8px
+    border: 2px solid $dark-blue
+    color: $dark-blue
+    outline: none
+    background-color: transparent
+    cursor: pointer
+.title-block
+  position: relative
+  width: 100%
+  overflow: hidden
+  max-width: 1440px
+.title-wrapper
+  max-width: 1140px
+  margin: auto
+  &__content
+    z-index: 10
+    display: flex
+    flex-direction: column
+    max-width: 485px
+
+.title
+  margin: 0 0 15px 0
+  line-height: 60px
+  &__number, &__name
+    display: block
+    width: 100%
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+  &__country
+    display: block
+    white-space: nowrap
+    width: 100%
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+.paragraph
+  margin: 0
+  font-family: Open Sans
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 32px
+  color: $gray-text
+  margin-bottom: 63px
+.button-title
+  outline: none
+  border: none
+  cursor: pointer
+  background: $dark-text
+  border-radius: 8px
+  font-family: Open Sans
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 25px
+  text-align: center
+  color: $white
+  height: 56px
+  width: 243px
+  margin-bottom: 56px
+.button-next
+  display: block
+  width: 56px
+  height: 54px
+  margin-bottom: 105px
+  z-index: 10
+  &__icon
+    width: 100%
+    height: 100%
+.images-block
+  &__points
+    top: 161px
+    left: 50%
+    transform: translate(-25%, 0)
+    position: absolute
+    display: block
+    z-index: 1
+  &__macbook
+    left: 53%
+    top: 60px
+    height: 565px
+    position: absolute
+    display: block
+    z-index: 2
+  &__iphone
+    left: 50%
+    top: 205px
+    height: 445px
+    position: absolute
+    display: block
+    z-index: 3
+  &__ovals
+    right: -8%
+    top: 180px
+    width: 540px
+    height: 540px
+    position: absolute
+    display: block
+    z-index: 0
