@@ -1,6 +1,11 @@
 @media ( max-width: 1200px)
   .container, .title-wrapper
     max-width: 920px
+  .we-do
+    &__wrapper
+      display: block
+    &__card
+      width: 290px
 @media ( max-width: 992px)
   .container , .title-wrapper
     max-width: 700px
@@ -23,6 +28,25 @@
       height: 390px
     &__points
       left: 62%
+  .partners
+    &-wrapper
+      padding-top: 80px
+    &__info-block
+      margin-bottom: 45px
+    &__link
+      width: 100px
+    &__subtitle
+      font-size: 32px
+      line-height: 40px
+    &__info
+      font-size: 16px
+      line-height: 30px
+  .we-do
+    &__services
+      justify-content: space-around
+    &__wrapper
+      width: 87%
+
 @media ( max-width: 768px)
   .container
     max-width: 576px
@@ -90,6 +114,46 @@
       right: 425px
       top: 12%
       height: 30%
+  .partners
+    &-wrapper
+      align-items: center
+    &__title
+      margin-bottom: 25px
+    &__icons
+      flex-wrap: wrap
+      justify-content: space-around
+    &__subtitle
+      margin-right: 0
+      margin-bottom: 15px
+    &__info-block
+      align-items: center
+      flex-direction: column
+      text-align: center
+    &__icon
+      margin: 0
+    &__icons
+      margin-bottom: 50px
+    &__link
+      margin: 0 10px 30px 10px
+      width: 22%
+      min-width: 95px
+  .we-do
+    &__card
+      width: 250px
+      min-height: 197px
+      max-height: 250px
+  .card
+    padding: 23px 18px 7px 23px
+    flex-direction: column
+    &__title
+      margin-bottom: 4px
+    &__text
+      padding-left: 0
+      padding-top: 14px
+      min-width: 65%
+    &__image
+      margin-top: 0
+      margin-bottom: 0
 
 @media ( max-width: 576px)
   .navbar
@@ -114,6 +178,48 @@
 
     &__points
       right: 310px
+  .partners
+    &__subtitle
+      width: auto
+      font-size: 28px
+      line-height: 29px
+    &__info
+      width: auto
+      font-size: 13px
+      line-height: 24px
+      &-block
+        margin-bottom: 25px
+  .we-do
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 20px
+    &__info
+      font-size: 16px
+      line-height: 28px
+
+    &__wrapper
+      align-items: center
+      text-align: center
+      width: 350px
+      padding-top: 36px
+      padding-bottom: 6px
+      margin: auto
+    &__card
+      min-width: 280px
+      width: 80%
+      margin-bottom: 7px
+      &--ux-ui
+        order: 1
+      &--research
+        order: 2
+    &__services
+      justify-content: center
+      padding-bottom: 28px
+  .card
+    &__image
+      width: 32px
+      height: 34px
 
 @media ( max-width: 480px) and ( min-width: 320px)
   .container, .title-wrapper__content
@@ -143,3 +249,11 @@
 
     &__points
       right: 230px
+  .partners
+    &-wrapper
+      padding-top: 70px
+    &__link
+      width: 30%
+  .we-do
+    &__wrapper
+      width: 290px
