@@ -1,3 +1,4 @@
+
 @media ( max-width: 1200px)
   .container, .title-wrapper
     max-width: 920px
@@ -6,6 +7,14 @@
       display: block
     &__card
       width: 290px
+  .slider-card
+    width: 300px
+    &__subtitle
+      margin-bottom: 8px
+    &__img
+      min-height: 350px
+      max-height: 350px
+
 @media ( max-width: 992px)
   .container , .title-wrapper
     max-width: 700px
@@ -220,6 +229,51 @@
     &__image
       width: 32px
       height: 34px
+  .title-section
+    font-size: 28px
+    line-height: 36px
+  .subtitle-section
+    font-size: 14px
+    line-height: 20px
+
+  .slider-card
+    width: 280px
+    height: 404px
+    margin-bottom: 24px
+    &__img
+      max-height: 300px
+      min-height: 300px
+      min-width: 100%
+    &__text-wrapper
+      padding: 20px 10px
+      text-align: center
+    &__subtitle
+      font-size: 14px
+      line-height: 20px
+    &__title
+      font-size: 24px
+      line-height: 32px
+
+  .our-project
+    &-wrapper
+      padding-top: 42px
+    &__title
+      margin-bottom: 16px
+    &__slider-arrows
+      display: none
+    &__info-block
+      width: 100%
+      justify-content: center
+      margin-bottom: 36px
+
+  .swiper-container--mobile-invisible
+    display: none
+  .our-project__cards--mobile-visible
+    display: flex
+  .our-project-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
 
 @media ( max-width: 480px) and ( min-width: 320px)
   .container, .title-wrapper__content

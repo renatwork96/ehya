@@ -1,0 +1,73 @@
+.our-project
+  background-color: $white
+  margin-bottom: 100px
+  &-wrapper
+    padding-top: 100px
+  &__title
+    margin: 0
+    margin-bottom: 20px
+  &__info-block
+    width: 90%
+    margin-bottom: 45px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+  &__slider-arrows
+    width: 75px
+    display: flex
+    justify-content: space-between
+
+  &__slider-arrow
+    outline: none
+    background-color: transparent
+    cursor: pointer
+    border: none
+    padding: 0
+    width: 14px
+    height: 18px
+  &__cards
+    display: none
+    flex-direction: column
+    align-items: center
+.arrow-slider
+  width: 100%
+  height: 100%
+  fill: $dark-blue
+
+.slider-card
+  height: 524px
+  width: 360px
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  border: 1px solid $gray-border
+  border-radius: 8px
+  &__subtitle
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $dark-blue
+    margin-bottom: 16px
+  &__title
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 30px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: $dark-text
+  &__img
+    height: 100%
+    object-fit: cover
+    max-height: 400px
+    min-height: 400px
+    align-self: flex-start
+  &__text-wrapper
+    padding: 24px 10px 24px 24px
+    border-top: 1px solid $gray-border
+.swiper-wrapper
+.swiper-slide
+  width: auto

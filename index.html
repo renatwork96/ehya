@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="icon" href="img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -98,7 +100,7 @@
             <button class="button-title">Наше портфолио</button>
           </div>
           <!-- /.title-wrapper__content -->
-          <a href="" class="button-next"
+          <a href="#partners" class="button-next"
             ><img
               src="img/icon-arrow.svg"
               alt="icon: arrow-next"
@@ -132,13 +134,14 @@
       </div>
       <!-- /.title-block -->
     </header>
-    <div class="partners">
+    <div class="partners" id="partners">
       <div class="container">
         <div class="partners-wrapper">
           <h2 class="partners__title">Наши партнеры</h2>
           <div class="partners__info-block">
             <h3 class="partners__subtitle">
-              <span class="nowrap">Мы работали </span>с ними, <span class="nowrap"> Мы доверяем </span>друг другу
+              <span class="nowrap">Мы работали </span>с ними,
+              <span class="nowrap"> Мы доверяем </span>друг другу
             </h3>
             <p class="partners__info">
               Наша команда предоставляет творческое образование высокого уровня
@@ -148,30 +151,47 @@
           </div>
           <!-- /.partners__info-blolck -->
           <div class="partners__icons">
-            <a href="" class="partners__link"><img
-              src="img/icon-slack.png"
-              alt="icon: slack"
-              class="partners__icon"
+            <a href="https://slack.com/" target="_blank" class="partners__link"
+              ><img
+                src="img/icon-slack.png"
+                alt="icon: slack"
+                class="partners__icon"
             /></a>
-            <a href="" class="partners__link"><img
-              src="img/icon-netflix.png"
-              alt="icon: netflix"
-              class="partners__icon"
+            <a
+              href="https://www.netflix.com/"
+              target="_blank"
+              class="partners__link"
+              ><img
+                src="img/icon-netflix.png"
+                alt="icon: netflix"
+                class="partners__icon"
             /></a>
-            <a href="" class="partners__link"><img
-              src="img/icon-fitbip.png"
-              alt="icon: fitbip"
-              class="partners__icon"
+            <a
+              href="https://www.fitbit.com/"
+              target="_blank"
+              class="partners__link"
+              ><img
+                src="img/icon-fitbip.png"
+                alt="icon: fitbip"
+                class="partners__icon"
             /></a>
-            <a href="" class="partners__link"><img
-              src="img/icon-google.png"
-              alt="icon: google"
-              class="partners__icon"
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              class="partners__link"
+              ><img
+                src="img/icon-google.png"
+                alt="icon: google"
+                class="partners__icon"
             /></a>
-            <a href="" class="partners__link"><img
-              src="img/icon-airbnb.png"
-              alt="icon: airbnb"
-              class="partners__icon"
+            <a
+              href="https://www.airbnb.ru/"
+              target="_blank"
+              class="partners__link"
+              ><img
+                src="img/icon-airbnb.png"
+                alt="icon: airbnb"
+                class="partners__icon"
             /></a>
           </div>
           <!-- /.partners__icons -->
@@ -184,52 +204,104 @@
     <div class="we-do">
       <div class="container">
         <div class="we-do__wrapper">
-          <h2 class="we-do__title">
-            Что мы делаем
-          </h2>
-          <p class="we-do__info">Мы работаем вместе с нашим клиентом, чтобы создать эффективный продукт.</p>
+          <h2 class="we-do__title">Что мы делаем</h2>
+          <p class="we-do__info">
+            Мы работаем вместе с нашим клиентом, чтобы создать эффективный
+            продукт.
+          </p>
         </div>
         <div class="we-do__services">
           <div class="we-do__card card">
-            <div class="card__image-wrapper"><img src="img/card-icon-1.png" alt="icon: card" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="img/card-icon-1.png"
+                alt="icon: card"
+                class="card__image"
+              />
+            </div>
             <div class="card__text">
               <h4 class="card__title">Брендинг</h4>
-              <p class="card__info">Создаем логотип и концепцию под нужды вашего бренда.</p>
+              <p class="card__info">
+                Создаем логотип и концепцию под нужды вашего бренда.
+              </p>
             </div>
           </div>
           <div class="we-do__card card">
-            <div class="card__image-wrapper"><img src="img/card-icon-2.png" alt="icon: card" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="img/card-icon-2.png"
+                alt="icon: card"
+                class="card__image"
+              />
+            </div>
             <div class="card__text">
               <h4 class="card__title">Разработка</h4>
-              <p class="card__info">Мы разрабатываем ваши приложения, веб-сайт и панель управления для вас.</p>
+              <p class="card__info">
+                Мы разрабатываем ваши приложения, веб-сайт и панель управления
+                для вас.
+              </p>
             </div>
           </div>
           <div class="we-do__card card we-do__card--ux-ui">
-            <div class="card__image-wrapper"><img src="img/card-icon-3.png" alt="icon: card" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="img/card-icon-3.png"
+                alt="icon: card"
+                class="card__image"
+              />
+            </div>
             <div class="card__text">
               <h4 class="card__title">UI/UX Дизайн</h4>
-              <p class="card__info">Создание цифрового продукта с красивым и интуитивно понятным дизайном.</p>
+              <p class="card__info">
+                Создание цифрового продукта с красивым и интуитивно понятным
+                дизайном.
+              </p>
             </div>
           </div>
           <div class="we-do__card card">
-            <div class="card__image-wrapper"><img src="img/card-icon-4.png" alt="icon: card" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="img/card-icon-4.png"
+                alt="icon: card"
+                class="card__image"
+              />
+            </div>
             <div class="card__text">
               <h4 class="card__title">Microstock</h4>
-              <p class="card__info">Мы производим миллион активов для нужд вашего бизнеса.</p>
+              <p class="card__info">
+                Мы производим миллион активов для нужд вашего бизнеса.
+              </p>
             </div>
           </div>
           <div class="we-do__card card">
-            <div class="card__image-wrapper"><img src="img/card-icon-5.png" alt="icon: card" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="img/card-icon-5.png"
+                alt="icon: card"
+                class="card__image"
+              />
+            </div>
             <div class="card__text">
               <h4 class="card__title">Соцсети</h4>
-              <p class="card__info">Планирование и поддержка социальных сетей для широкой аудитории.</p>
+              <p class="card__info">
+                Планирование и поддержка социальных сетей для широкой аудитории.
+              </p>
             </div>
           </div>
           <div class="we-do__card card we-do__card--research">
-            <div class="card__image-wrapper"><img src="img/card-icon-6.png" alt="icon: card" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="img/card-icon-6.png"
+                alt="icon: card"
+                class="card__image"
+              />
+            </div>
             <div class="card__text">
               <h4 class="card__title">Исследование</h4>
-              <p class="card__info">Помощь исследовательскому стартапу или бренду в удовлетворении потребностей бизнеса.</p>
+              <p class="card__info">
+                Помощь исследовательскому стартапу или бренду в удовлетворении
+                потребностей бизнеса.
+              </p>
             </div>
           </div>
         </div>
@@ -238,5 +310,253 @@
       <!-- /.container -->
     </div>
     <!-- /.we-do -->
+    <div class="our-project">
+      <div class="container">
+        <div class="our-project-wrapper">
+          <h2 class="our-project__title subtitle-section">Портфолио</h2>
+          <div class="our-project__info-block">
+            <h3 class="our-project__subtitle title-section">Наши проекты</h3>
+            <div class="our-project__slider-arrows">
+              <button
+                class="our-project__slider-arrow our-project__slider-arrow--prev"
+              >
+                <img
+                  src="img/icon-arrow-prev.svg"
+                  alt="icon: arrow-prev"
+                  class="arrow-slider"
+                />
+              </button>
+              <button
+                class="our-project__slider-arrow our-project__slider-arrow--next"
+              >
+                <img
+                  src="img/icon-arrow-next.svg"
+                  alt="icon: arrow-next"
+                  class="arrow-slider"
+                />
+              </button>
+            </div>
+          </div>
+          <!-- /.our-project__info-blolck -->
+        </div>
+        <!-- /.our-project-wrapper -->
+      </div>
+      <!-- /.container -->
+      <div class="swiper-container swiper-container--mobile-invisible">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <img
+                src="img/project-1.png"
+                alt="Image: project"
+                class="slider-card__img"
+              />
+              <div class="slider-card__text-wrapper">
+                <p class="slider-card__subtitle">Вебсайт, Лендинг</p>
+                <p class="slider-card__title">
+                  <span class="">Проект </span>Вебсайта
+                </p>
+              </div>
+              <!-- /.slider-card__text-wrapper -->
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <img
+                src="img/project-2.png"
+                alt="Image: project"
+                class="slider-card__img"
+              />
+              <div class="slider-card__text-wrapper">
+                <p class="slider-card__subtitle">
+                  Паенль навигации, UI/UX Дизайн
+                </p>
+                <p class="slider-card__title">Проект Дизайна</p>
+              </div>
+              <!-- /.slider-card__text-wrapper -->
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <img
+                src="img/project-3.png"
+                alt="Image: project"
+                class="slider-card__img"
+              />
+              <div class="slider-card__text-wrapper">
+                <p class="slider-card__subtitle">Приложения, Мобильные, iOS</p>
+                <p class="slider-card__title">Проекты приложений</p>
+              </div>
+              <!-- /.slider-card__text-wrapper -->
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="slider-card">
+              <img
+                src="img/project-4.png"
+                alt="Image: project"
+                class="slider-card__img"
+              />
+              <div class="slider-card__text-wrapper">
+                <p class="slider-card__subtitle">Instagram</p>
+                <p class="slider-card__title">Проект иллюстраций</p>
+              </div>
+              <!-- /.slider-card__text-wrapper -->
+            </div>
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.slider-project -->
+      <div class="our-project__cards our-project__cards--mobile-visible">
+        <div class="slider-card">
+          <img
+            src="img/project-1.png"
+            alt="Image: project"
+            class="slider-card__img"
+          />
+          <div class="slider-card__text-wrapper">
+            <p class="slider-card__subtitle">Вебсайт, Лендинг</p>
+            <p class="slider-card__title">
+              <span class="">Проект </span>Вебсайта
+            </p>
+          </div>
+          <!-- /.slider-card__text-wrapper -->
+        </div>
+        <div class="slider-card">
+          <img
+            src="img/project-2.png"
+            alt="Image: project"
+            class="slider-card__img"
+          />
+          <div class="slider-card__text-wrapper">
+            <p class="slider-card__subtitle">UI/UX Дизайн</p>
+            <p class="slider-card__title">Проект Дизайна</p>
+          </div>
+          <!-- /.slider-card__text-wrapper -->
+        </div>
+        <div class="slider-card">
+          <img
+            src="img/project-3.png"
+            alt="Image: project"
+            class="slider-card__img"
+          />
+          <div class="slider-card__text-wrapper">
+            <p class="slider-card__subtitle">Приложения, Мобильные, iOS</p>
+            <p class="slider-card__title">Проекты приложений</p>
+          </div>
+          <!-- /.slider-card__text-wrapper -->
+        </div>
+        <div class="slider-card">
+          <img
+            src="img/project-4.png"
+            alt="Image: project"
+            class="slider-card__img"
+          />
+          <div class="slider-card__text-wrapper">
+            <p class="slider-card__subtitle">Instagram</p>
+            <p class="slider-card__title">Проект иллюстраций</p>
+          </div>
+          <!-- /.slider-card__text-wrapper -->
+        </div>
+      </div>
+      <!-- /.our-project__cards -->
+    </div>
+    <!-- /.our-project -->
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews-wrapper">
+          <h2 class="reviews__title subtitle-section">Отзывы</h2>
+          <h3 class="reviews__subtitle title-section">Что говорят о нас</h3>
+        </div>
+        <div class="reviews-swiper-container reviews-slider">
+          <!-- Additional required wrapper -->
+          <div class="reviews-swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-1.png"
+                    alt="Jaquon Hart"
+                    class="reviews-slider__avatar"
+                  />
+                  <div class="reviews-slider__profile-info">
+                    <div class="reviews-slider__name">Jaquon Hart</div>
+                    <div class="reviews-slider__company">
+                      Вице-президент - компания Lizlle
+                    </div>
+                  </div>
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  «Их навыки и опыт в области пользовательского интерфейса /
+                  пользовательского интерфейса были ключевыми для выявления
+                  потенциальных проблемных моментов в наших бизнес-процессах,
+                  которые они прекрасно исправили или оптимизировали».
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-2.png"
+                    alt="Valdemar Forsberg"
+                    class="reviews-slider__avatar"
+                  />
+                  <div class="reviews-slider__profile-info">
+                    <div class="reviews-slider__name">Valdemar Forsberg</div>
+                    <div class="reviews-slider__company">
+                      Основатель Digitac Finance
+                    </div>
+                  </div>
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Ehya подтолкнул нас к мысли, выходящей за рамки наших
+                  первоначальных возможностей и воображения, при этом
+                  гарантируя, что дизайн и форма платформы постоянно
+                  корректируются на основе данных.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img src="img/reviews-avatar-3.jpg" alt="" class="reviews-slider__avatar" />
+                  <div class="reviews-slider__profile-info">
+                    <div class="reviews-slider__name">Janklod Shvarzneger</div>
+                    <div class="reviews-slider__company">
+                      Вице-президент - компания Roga&Kapito
+                    </div>
+                  </div>
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности представляет
+                  собой интересный эксперимент проверки своевременного выполнения сверхзадачи.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- /.reviews-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.reviews -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
