@@ -49,7 +49,9 @@
           slidesPerView: 2,
         },
       320: {
+          //centeredSlides: true,
           slidesPerView: 1,
+          spaceBetween: 1,
         },
     },
 

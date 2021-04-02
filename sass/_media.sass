@@ -23,7 +23,10 @@
         padding: 35px
       &__button-next
         margin-right: -440px
-
+      &__text
+        max-height: 75%
+  .social-card
+    width: 200px
 @media ( max-width: 992px)
   .container , .title-wrapper
     max-width: 700px
@@ -70,6 +73,9 @@
         width: 95%
       &__button-next
         margin-right: -315px
+  .social-card
+    width: 40%
+    margin-bottom: 48px
 
 @media ( max-width: 768px)
   .container
@@ -179,6 +185,8 @@
       margin-top: 0
       margin-bottom: 0
   .reviews
+    padding-top: 100px
+    margin-bottom: 72px
     &-slider
       &__profile
         margin-bottom: 15px
@@ -195,6 +203,17 @@
         transform: none
         right: auto
         top: auto
+  .social
+    &__subtitle
+      margin-bottom: 48px
+    &-card
+      margin-bottom: 32px
+      &__text
+        font-size: 14px
+        line-height: 19px
+      &__subscribe
+        font-size: 15px
+        line-height: 20px
 
 @media ( max-width: 576px)
   .navbar
@@ -306,6 +325,58 @@
     display: flex
     flex-direction: column
     align-items: center
+  .reviews
+    padding-top: 32px
+    &-swiper-container
+      width: 100%
+      margin: auto
+      margin-bottom: 24px
+    &-wrapper
+      text-align: center
+    &__subtitle
+      margin-bottom: 68px
+    &-slider
+      &__item
+        height: 354px
+        padding: 24px 7px 18px 7px
+        text-align: center
+        width: 99%
+      &__avatar
+        margin: 0
+        margin-bottom: 16px
+      &__profile
+        flex-direction: column
+        align-items: center
+        margin-bottom: 6px
+      &__name
+        margin-bottom: 7px
+        font-size: 20px
+        line-height: 24px
+      &__company
+        font-size: 11px
+        line-height: 27px
+      &__text
+        font-size: 14px
+        line-height: 22px
+  .social
+    &-link-wrapper
+      width: 100%
+    &__subtitle
+      margin-bottom: 32px
+  .social-card
+    height: 199px
+    &__image-wrapper
+      width: 48px
+      height: 48px
+      margin-bottom: 15px
+    &__image
+      width: 28px
+    &__name
+      margin-bottom: 8px
+    &__text
+      font-size: 13px
+    &__subscribe
+      font-size: 11px
 
 @media ( max-width: 480px) and ( min-width: 320px)
   .container, .title-wrapper__content
