@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
   const swiper = new Swiper(".swiper-container", {
     // Optional parameters
     loop: false,
@@ -41,10 +41,21 @@ $(document).ready(function () {
   const reviewsSlider = new Swiper(".reviews-swiper-container", {
     // Optional parameters
     loop: true,
+    spaceBetween: 25,
+    slidesPerView: 2,
+    breakpoints: {
+      993: {
+          spaceBetween: 25,
+          slidesPerView: 2,
+        },
+      320: {
+          slidesPerView: 1,
+        },
+    },
 
     navigation: {
-      nextEl: ".our-project__slider-arrow--next",
-      prevEl: ".our-project__slider-arrow--prev",
+      nextEl: ".reviews-slider__button-next",
+      prevEl: ".reviews-slider__button-prev",
     },
   });
-});
+

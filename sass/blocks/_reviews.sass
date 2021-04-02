@@ -1,38 +1,82 @@
-.reviews-slider
-  &__item
-    width: 555px
-    height: 267px
-    padding: 40px
-    border: 1px solid $light-border
-    border-radius: 8px
-  &__profile
-    display: flex
-    margin-bottom: 30px
-  &__avatar
-    width: 56px
-    height: 56px
-    border-radius: 50%
-    overflow: hidden
-    margin-right: 20px
-  &__name
-    font-family: Roboto
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 32px
-    letter-spacing: 0.2px
-    color: $dark-text
-  &__company
-    font-family: Open Sans
-    font-style: normal
-    font-weight: normal
-    font-size: 16px
-    line-height: 28px
-    color: $gray-text
-  &__text
-    font-family: Open Sans
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 24px
-    color: $gray-text
+
+.container--overflow-hidden
+.reviews
+  padding-top: 160px
+  position: relative
+  margin-bottom: 100px
+  &__title
+    margin-bottom: 20px
+  &__subtitle
+    margin-bottom: 48px
+  &-slider
+    position: relative
+    &__item
+      width: 555px
+      height: 267px
+      padding: 43px 40px 40px 40px
+      border: 1px solid $light-border
+      border-radius: 8px
+    &__profile
+      display: flex
+      margin-bottom: 35px
+    &__avatar
+      width: 56px
+      height: 56px
+      border-radius: 50%
+      overflow: hidden
+      margin-right: 20px
+    &__name
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $dark-text
+    &__company
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      color: $gray-text
+    &__text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+      color: $gray-text
+      overflow: auto
+      max-height: 75%
+    &__button-wripper
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: auto
+      z-index: 10
+    &__button-next
+      padding: 0
+      position: absolute
+      height: 56px
+      width: 56px
+      right: 10%
+      top: 77%
+      margin-right: -568px
+      transform: translate(50%, -50%)
+      background-color: $white
+      border-radius: 50%
+      outline: none
+      border: none
+      filter: drop-shadow(0px 12px 16px rgba(0, 0, 0, 0.08))
+      z-index: 10
+      background-image: url(../img/icon-reviews-next.png)
+      background-repeat: no-repeat
+      background-position: center
+      cursor: pointer
+
+.reviews-swiper-container
+  overflow: hidden
+  margin-bottom: 20px
