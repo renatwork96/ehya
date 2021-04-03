@@ -44,10 +44,11 @@
                     <a href="#" class="navbar-submenu__link">Два</a>
                   </li>
                   <li class="navbar-submenu__item">
-                    <a href="#" class="navbar-submenu__link"
-                      >Тристатридцать три</a
-                    >
+                    <a href="#" class="navbar-submenu__link">Два</a>
                   </li>
+                  <li class="navbar-submenu__item">
+                    <a href="#" class="navbar-submenu__link"
+                      >Тристатридцать три</a></li>
                 </ul>
               </li>
               <li class="navbar-menu__item">
@@ -77,7 +78,7 @@
                 <a href="#" class="navbar-menu__link">Помощь</a>
               </li>
             </ul>
-            <button class="navbar__button">Получить</button>
+            <button data-toggle="modal" data-href="#modal" class="navbar__button">Получить</button>
           </div>
           <!-- /.navbar__text-container -->
         </div>
@@ -97,7 +98,7 @@
               Мы даем результаты, помогающие Вам добиться экономии средств и
               времени без риска или накладных расходов на управление
             </p>
-            <button class="button-title">Наше портфолио</button>
+            <a href="#our-project" class="button-title"><span class="button-title__text">Наше портфолио</span></a>
           </div>
           <!-- /.title-wrapper__content -->
           <a href="#partners" class="button-next"
@@ -310,7 +311,7 @@
       <!-- /.container -->
     </div>
     <!-- /.we-do -->
-    <div class="our-project">
+    <div class="our-project" id="our-project">
       <div class="container">
         <div class="our-project-wrapper">
           <h2 class="our-project__title subtitle-section">Портфолио</h2>
@@ -678,7 +679,7 @@
             Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы
             помочь всем, что вам нужно
           </p>
-          <button class="we-ready__button-talk">Пообщаемся?</button>
+          <button data-toggle="modal" data-href="#modal" class="we-ready__button-talk">Пообщаемся?</button>
         </div>
         <!-- /.we-ready__wrapper -->
       </div>
@@ -823,6 +824,35 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="modal" id="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close">
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Заполните форму</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+          <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required
+            minlength="18">
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <div class="modal__footer-wrapper">
+            <button class="button modal__button" type="submit">Отправить</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

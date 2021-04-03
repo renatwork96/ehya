@@ -34,6 +34,21 @@
   .navbar
     &__text-container
       max-width: 565px
+    &__button
+      &:hover
+        -o-transform: none
+        -ms-transform: none
+        -moz-transform: none
+        -webkit-transform: none
+        transform: none
+  .button-next, .button-title
+    &:hover
+      -o-transform: none
+      -ms-transform: none
+      -moz-transform: none
+      -webkit-transform: none
+      transform: none
+
   .images-block
     &__macbook
       top: 95px
@@ -76,6 +91,14 @@
   .social-card
     width: 40%
     margin-bottom: 48px
+  .we-ready
+    &__button-talk
+      &:hover
+        -o-transform: none
+        -ms-transform: none
+        -moz-transform: none
+        -webkit-transform: none
+        transform: none
   .footer
     padding-top: 90px
     &-wrapper
@@ -97,6 +120,21 @@
       width: 130px
     &__subfooter
       display: none
+  .modal
+    &__dialog
+      left: 50%
+      width: 70%
+      transform: translate(-50%, -50%)
+    &__close
+      &:hover
+        outline: none
+    &__button
+      &:hover
+        -o-transform: none
+        -ms-transform: none
+        -moz-transform: none
+        -webkit-transform: none
+        transform: none
 
 @media ( max-width: 768px)
   .container
@@ -277,6 +315,16 @@
         display: none
       &__title--mobile-visible
         display: block
+  .modal
+    &__footer-wrapper
+      justify-content: flex-end
+    &__button
+      width: 100%
+      max-width: 100%
+      margin-right: 0
+      order: 2
+    &__dialog
+      padding: 33px 60px
 
 @media ( max-width: 576px)
   .navbar
@@ -475,6 +523,9 @@
       margin-bottom: 25px
     &__product
       margin-bottom: 25px
+  .modal
+    &__dialog
+      padding: 33px 60px
 
 @media ( max-width: 480px) and ( min-width: 320px)
   .container, .title-wrapper__content
@@ -512,3 +563,11 @@
   .we-do
     &__wrapper
       width: 290px
+  .modal
+    &__input
+      padding: 0 15px
+    &__message
+      padding: 18px 15px
+    &__dialog
+      width: 90%
+      padding: 33px 40px

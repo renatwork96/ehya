@@ -1,0 +1,152 @@
+.modal
+  font-family: Open Sans
+  font-style: normal
+  font-weight: normal
+  &__overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 1
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+      overflow: auto
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    padding: 33px 88px
+    background-color: $dark-text
+    transform: translate(-50%, -50%)
+    color: $white
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 1
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+      overflow: auto
+      max-height: 97%
+      overflow: auto
+  &__close
+    position: fixed
+    right: 18px
+    top: 17px
+    height: 16px
+    text-decoration: none
+    cursor: pointer
+    outline: none
+    &:hover
+      outline: 1px solid $white
+      outline-offset: 2px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+    &--mb-3
+      margin-top: 0
+      margin-bottom: 0
+  &__input
+    width: 100%
+    margin-top: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &::-webkit-input-placeholder
+      color: $gray-text
+    &::-moz-placeholder
+      color: $gray-text
+    &:-moz-placeholder
+      color: $gray-text
+    &::-ms-input-placeholder
+      color: $gray-text
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    resize: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    outline: none
+    &::-webkit-input-placeholder
+      color: $gray-text
+    &::-moz-placeholder
+      color: $gray-text
+    &:-moz-placeholder
+      color: $gray-text
+    &::-ms-input-placeholder
+      color: $gray-text
+  &__footer-wrapper
+    margin-top: 15px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__button
+    min-width: 160px
+    max-width: 160px
+    min-height: 50px
+    padding: 18px
+    outline: none
+    cursor: pointer
+    color: $white
+    background-color: $blue
+    border: none
+    border-radius: 4px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    margin-right: 10px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+    &:hover
+      -o-transform: scale(1.1 , 1.1)
+      -ms-transform: scale(1.1 , 1.1)
+      -moz-transform: scale(1.1 , 1.1)
+      -webkit-transform: scale(1.1 , 1.1)
+      transform: scale(1.1 , 1.1)
+      -o-transition: all 0.2s ease-in-out
+      -moz-transition: all 0.2s ease-in-out
+      -webkit-transition: all 0.2s ease-in-out
+      transition: all 0.2s ease-in-out
+
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $gray-light-text
+    white-space: nowrap
+    margin-bottom: 10px
+.invalid
+  color: red
+.input
+  height: 50px
+  background-color: #fff
+  border-radius: 4px
+  border: none
+  outline: none
+  padding: 0 23px
+.message
+  background-color: #fff
+  border-radius: 4px
+  padding: 18px 23px
+  border: none
