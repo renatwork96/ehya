@@ -147,10 +147,35 @@
     &-menu
       &__item
         margin-right: 0
+        text-align: center
+        display: block
+        margin-bottom: 20px
+    &-submenu
+      position: relative
+
     &__text-container
       display: none
+      &--visible
+        padding-top: 40px
+        display: flex
+        flex-direction: column
+        position: fixed
+        max-width: 100%
+        width: auto
+        height: auto
+        justify-content: flex-start
+        top: 100px
+        right: 0
+        left: 0
+        bottom: 0
+        z-index: 99
+        background-color: $gray-light-text
+        overflow: auto
+
     &__button
       width: 100px
+    &__menu-button
+      display: flex
   .title-wrapper
     width: 100%
     max-width: 100%

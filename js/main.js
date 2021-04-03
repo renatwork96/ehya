@@ -61,6 +61,11 @@
     },
   });
 
+  var menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener('click', function() {
+    document.querySelector(".navbar__text-container").classList.toggle('navbar__text-container--visible');
+  });
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   var closeModalOverlay = $(".modal__overlay");
@@ -98,16 +103,16 @@
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "The name must be at least two letters"
+          required: "Напишите Ваше имя",
+          minlength: "Имя должно быть длиннее 2-х символов"
         },
         email: {
-          required: "Please specify your email",
-          email: "Your email address must be in the format of name@domain.com"
+          required: "Напишите Ваш email",
+          email: "Почта должна быть вида: name@domain.com"
         },
         phone: {
-          required: "Please specify your phone number",
-          minlength: "The phone must be at least ten digits"
+          required: "Напишите Ваш телефон",
+          minlength: "Слишком короткий номер"
         },
       },
     });
