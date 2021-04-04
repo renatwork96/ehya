@@ -17,7 +17,9 @@ header
     min-height: 28px
   &__text-container
     display: flex
-    width: 600px
+    min-width: 600px
+    max-width: 675px
+
     justify-content: space-between
     align-items: center
 
@@ -92,6 +94,9 @@ header
     color: $dark-blue
     outline: none
     background-color: transparent
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
     cursor: pointer
     -o-transition: all 0.2s ease-in-out
     -moz-transition: all 0.2s ease-in-out

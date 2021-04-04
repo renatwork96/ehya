@@ -96,11 +96,11 @@
     width: 100%
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: flex-end
     align-items: center
   &__button
-    min-width: 160px
-    max-width: 160px
+    width: 100%
+    max-width: 100%
     min-height: 50px
     padding: 18px
     outline: none
@@ -116,6 +116,7 @@
     overflow: hidden
     white-space: nowrap
     text-overflow: ellipsis
+    order: 2
 
     &:hover
       -o-transform: scale(1.1 , 1.1)

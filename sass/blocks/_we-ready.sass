@@ -1,9 +1,13 @@
 .we-ready
   background-color: $blue
   padding-top: 60px
+  position: relative
   &__wrapper
     text-align: center
     color: $white
+    position: relative
+    z-index: 10
+
   &__title
     font-family: Roboto
     font-style: normal
@@ -11,6 +15,9 @@
     font-size: 48px
     line-height: 60px
     margin-bottom: 16px
+    max-width: 100%
+    overflow: hidden
+    text-overflow: ellipsis
   &__text
     font-family: Open Sans
     font-style: normal
@@ -48,3 +55,27 @@
       -moz-transition: all 0.2s ease-in-out
       -webkit-transition: all 0.2s ease-in-out
       transition: all 0.2s ease-in-out
+  &__background
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    overflow: hidden
+  &__circle-big
+    position: absolute
+    width: 1146px
+    height: 1146px
+    border-radius: 50%
+    background: linear-gradient(to right, transparent 40%, $blue-circle)
+    left: 30%
+    top: -190px
+
+  &__circle-little
+    position: absolute
+    width: 768px
+    height: 768px
+    background: $blue
+    border-radius: 50%
+    left: 54%
+    top: 133px

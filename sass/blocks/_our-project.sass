@@ -25,6 +25,13 @@
     padding: 0
     width: 14px
     height: 18px
+    &--prev
+      transform: rotate(180deg)
+
+    &--noactiv
+      cursor: default
+      opacity: 0.4
+
   &__cards
     display: none
     flex-direction: column
@@ -42,6 +49,10 @@
   overflow: hidden
   border: 1px solid $gray-border
   border-radius: 8px
+  &__link
+    &:hover
+      opacity: 0.7
+
   &__subtitle
     font-family: Open Sans
     font-style: normal
@@ -50,6 +61,9 @@
     line-height: 20px
     color: $dark-blue
     margin-bottom: 16px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
   &__title
     font-family: Roboto
     font-style: normal
@@ -58,6 +72,9 @@
     line-height: 40px
     letter-spacing: 0.2px
     color: $dark-text
+    overflow: hidden
+    text-overflow: ellipsis
+    height: 40px
   &__img
     height: 100%
     object-fit: cover
@@ -67,6 +84,7 @@
   &__text-wrapper
     padding: 24px 10px 24px 24px
     border-top: 1px solid $gray-border
+    overflow: hidden
 .swiper-wrapper
 .swiper-slide
   width: auto

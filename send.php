@@ -11,7 +11,7 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "New appeal Best Tour Plan";
+$title = "New appeal Ehya";
 $body = "
 <h2>New appeal</h2>
 <b>Name:</b> $name<br>

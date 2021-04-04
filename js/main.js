@@ -1,11 +1,13 @@
 
   const swiper = new Swiper(".swiper-container", {
+
     // Optional parameters
     loop: false,
     spaceBetween: 30,
     slidesPerView: "auto",
     slidesPerGroup: 1,
     centeredSlides: true,
+    //updateOnWindowResize: false,
     initialSlide: 1,
     breakpoints: {
       1200: {
@@ -32,12 +34,38 @@
       },
     },
 
+    
+
     navigation: {
       nextEl: ".our-project__slider-arrow--next",
       prevEl: ".our-project__slider-arrow--prev",
     },
   });
 
+  //Активация кнопок слайдера Наши проекты
+  swiper.on('slideChange', function() {
+    if ( swiper.activeIndex == 0 ) {
+      document.querySelector(".our-project__slider-arrow--prev").classList.toggle('our-project__slider-arrow--noactiv');
+    }
+    else if ( swiper.activeIndex == swiper.slides.length - 1 ) {
+      swiper.slideTo( swiper.slides.length - 1 ),
+      document.querySelector(".our-project__slider-arrow--next").classList.toggle('our-project__slider-arrow--noactiv');
+    } else if ( swiper.activeIndex != 0 && swiper.activeIndex != swiper.slides.length - 1 ) {
+      var arrowButtonPrev = $(".our-project__slider-arrow--prev");
+      var arrowButtonNext = $(".our-project__slider-arrow--next");
+      arrowButtonPrev.removeClass("our-project__slider-arrow--noactiv");
+      arrowButtonNext.removeClass("our-project__slider-arrow--noactiv");
+    }     
+  });
+
+  if ( swiper.activeIndex == 0 ) {
+    document.querySelector(".our-project__slider-arrow--prev").classList.toggle('our-project__slider-arrow--noactiv');
+  }
+
+
+
+
+  //Слайдер отзывов
   const reviewsSlider = new Swiper(".reviews-swiper-container", {
     // Optional parameters
     loop: true,
@@ -56,8 +84,8 @@
     },
 
     navigation: {
-      nextEl: ".reviews-slider__button-next",
-      prevEl: ".reviews-slider__button-prev",
+      nextEl: ".reviews__slider-button-next",
+      prevEl: ".reviews__slider-button-prev",
     },
   });
 
@@ -119,3 +147,19 @@
   })
   $(".phone").mask("+7 (999) 999-99-99");
 
+
+
+
+// window.addEventListener('resize',function(){
+//   if (window.matchMedia("(min-width: 1200px)").matches) {
+//     console.log("1200");
+//   } else if (window.matchMedia("(min-width: 992px) & (max-width: 992px)").matches){
+//     console.log("992");
+//   } else if (window.matchMedia("(min-width: 768px)").matches){
+//   console.log("768");
+//   } else if (window.matchMedia("(min-width: 576px)").matches){
+//   console.log("576");
+//   } else if (window.matchMedia("(min-width: 320px)").matches){
+//     console.log("320");
+// }
+// });

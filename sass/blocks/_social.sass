@@ -43,6 +43,10 @@
     line-height: 24px
     color: $dark-text
     margin-bottom: 15px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    max-width: 100%
   &__text
     font-family: Open Sans
     font-style: normal
@@ -50,6 +54,8 @@
     font-size: 16px
     line-height: 24px
     color: $gray-text
+    overflow: hidden
+    max-height: 30%
     &--small
       font-size: 14px
   &__subscribe
@@ -63,5 +69,12 @@
     display: flex
     position: absolute
     bottom: 0
+    max-width: 100%
+    &-text
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      max-width: 100%
+
   &__arrow-subscribe
     margin-left: 5px

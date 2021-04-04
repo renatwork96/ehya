@@ -14,6 +14,8 @@
     &__img
       min-height: 350px
       max-height: 350px
+    &__title
+      height: auto
   .reviews
     &-slider
       &__profile
@@ -21,16 +23,19 @@
       &__item
         width: 430px
         padding: 35px
-      &__button-next
-        margin-right: -440px
       &__text
         max-height: 75%
+    &__slider-button-next
+      margin-right: -440px
   .social-card
     width: 200px
 @media ( max-width: 992px)
   .container , .title-wrapper
     max-width: 700px
     width: 92%
+  .title-wrapper__content
+    max-width: 480px
+
   .navbar
     &__text-container
       max-width: 565px
@@ -82,12 +87,17 @@
       justify-content: space-around
     &__wrapper
       width: 87%
+  .slider-card
+    &__link
+      &:hover
+        opacity: 1
+
   .reviews
     &-slider
       &__item
         width: 95%
-      &__button-next
-        margin-right: -315px
+    &__slider-button-next
+      margin-right: -315px
   .social-card
     width: 40%
     margin-bottom: 48px
@@ -278,15 +288,15 @@
         width: 100%
         max-height: 354px
         overflow: hidden
-      &__button-wripper
-        position: relative
-      &__button-next
-        position: relative
-        display: block
-        margin: auto
-        transform: none
-        right: auto
-        top: auto
+    &__slider-button-wripper
+      position: relative
+    &__slider-button-next
+      position: relative
+      display: block
+      margin: auto
+      transform: none
+      right: auto
+      top: auto
   .social
     margin-bottom: 23px
     &__subtitle
@@ -296,6 +306,7 @@
       &__text
         font-size: 14px
         line-height: 19px
+        max-height: 80px
       &__subscribe
         font-size: 15px
         line-height: 20px
@@ -307,9 +318,25 @@
     &__text
       font-size: 16px
       line-height: 27px
-      margin-bottom: 16px
+      margin: 0 auto 16px auto
+      width: 95%
     &__button-talk
       margin-bottom: 64px
+    &__circle-little
+      width: 440px
+      height: 440px
+
+      left: auto
+      top: 323px
+      right: -290px
+    &__circle-big
+      width: 664px
+      height: 664px
+      background: linear-gradient(to right, transparent 0%, #2fc5e0 50%)
+      left: auto
+      top: 210px
+      right: -405px
+
   .footer
     &__product
       width: 40%
@@ -440,6 +467,7 @@
     &__title
       font-size: 24px
       line-height: 32px
+      height: 38px
 
   .our-project
     &-wrapper
@@ -519,6 +547,7 @@
 
   .footer
     padding-top: 48px
+    padding-bottom: 75px
     &-wrapper
       justify-content: flex-start
     &-list
