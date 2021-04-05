@@ -7,14 +7,20 @@
     slidesPerView: "auto",
     slidesPerGroup: 1,
     centeredSlides: true,
+    // slidesOffsetBefore: -390,
     //updateOnWindowResize: false,
-    initialSlide: 1,
+    initialSlide: 0,
     breakpoints: {
       1200: {
+        centeredSlides: true,
         spaceBetween: 30,
+        initialSlide: 0,
+        slidesOffsetBefore: -390,
       },
       992: {
         spaceBetween: 20,
+        initialSlide: 0,
+        slidesOffsetBefore: -310,
       },
       768: {
         slidesOffsetBefore: -200,
@@ -43,14 +49,19 @@
   });
 
   //Активация кнопок слайдера Наши проекты
+  const sliderBtnPrev = document.querySelector(".our-project__slider-arrow--prev");
+
   swiper.on('slideChange', function() {
-    if ( swiper.activeIndex == 0 ) {
+    if ( swiper.activeIndex == 0 && sliderBtnPrev) {
+      //swiper.slideTo(1);
       document.querySelector(".our-project__slider-arrow--prev").classList.toggle('our-project__slider-arrow--noactiv');
+      // if (window.matchMedia("(min-width: 992px)").matches){
+      // console.log("992");
     }
     else if ( swiper.activeIndex == swiper.slides.length - 1 ) {
       swiper.slideTo( swiper.slides.length - 1 ),
       document.querySelector(".our-project__slider-arrow--next").classList.toggle('our-project__slider-arrow--noactiv');
-    } else if ( swiper.activeIndex != 0 && swiper.activeIndex != swiper.slides.length - 1 ) {
+    } else if ( swiper.activeIndex != 0 && swiper.activeIndex != swiper.slides.length - 1 && sliderBtnPrev) {
       var arrowButtonPrev = $(".our-project__slider-arrow--prev");
       var arrowButtonNext = $(".our-project__slider-arrow--next");
       arrowButtonPrev.removeClass("our-project__slider-arrow--noactiv");
@@ -113,7 +124,6 @@
   function openModal() {
     
     var targetModal = $(this).attr('data-href');
-    console.log(targetModal);
     $(targetModal).find(".modal__overlay").addClass('modal__overlay--visible');
     $(targetModal).find(".modal__dialog").addClass('modal__dialog--visible');
   }
@@ -144,7 +154,7 @@
         },
       },
     });
-  })
+  });
   $(".phone").mask("+7 (999) 999-99-99");
 
 

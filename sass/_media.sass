@@ -1,4 +1,23 @@
 
+@media ( max-width: 1440px)
+  .title-block
+    position: relative
+  .images-block
+    &__macbook
+      left: 52%
+      top: 60px
+      height: 565px
+      position: absolute
+      z-index: 2
+      right: auto
+    &__iphone
+      left: 50%
+      top: 205px
+      height: 445px
+      position: absolute
+      z-index: 3
+    &__ovals
+      right: -8%
 @media ( max-width: 1200px)
   .container, .title-wrapper
     max-width: 920px
@@ -37,6 +56,9 @@
     width: 92%
   .title-wrapper__content
     max-width: 480px
+  a
+    &:hover
+      text-decoration: none
 
   .navbar
     &__text-container
@@ -48,6 +70,19 @@
         -moz-transform: none
         -webkit-transform: none
         transform: none
+    &-menu
+      &__item
+        &:hover .navbar-menu__arrow
+          -o-transition: all 0s ease
+          -moz-transition: all 0s ease
+          -webkit-transition: all 0s ease
+          transition: all 0s ease
+      &__arrow
+        -o-transition: all 0s ease
+        -moz-transition: all 0s ease
+        -webkit-transition: all 0s ease
+        transition: all 0s ease
+
   .button-next, .button-title
     &:hover
       -o-transform: none
@@ -61,6 +96,7 @@
       top: 95px
       left: 64%
       height: 480px
+
     &__iphone
       top: 230px
       left: 64%
@@ -168,7 +204,7 @@
     width: 92%
 
   .navbar
-    width: 92%
+    width: 90%
     max-width: 576px
     margin: auto
     &-menu
@@ -615,7 +651,7 @@
   .container
     min-width: 270px
   .navbar__menu-button
-    margin-right: 12px
+    margin-right: 10px
     margin-bottom: 5px
   .title-wrapper__content
     max-width: 87%

@@ -30,11 +30,10 @@ header
       vertical-align: middle
       max-width: 115px
       display: inline-block
-      margin: 0 17px 0 0
+      margin: 0 19px 0 0
       position: relative
       &:hover .navbar-submenu
         display: block
-        background-color:
       &:hover .navbar-menu__arrow
         -moz-transform: rotate(180deg)
         -ms-transform: rotate(180deg)
@@ -114,7 +113,7 @@ header
       -webkit-transition: all 0.2s ease-in-out
       transition: all 0.2s ease-in-out
 .title-block
-  position: relative
+  position: inherit
   width: 100%
   overflow: hidden
   max-width: 1440px
@@ -223,21 +222,23 @@ header
     display: block
     z-index: 1
   &__macbook
-    left: 52%
-    top: 60px
+    right: 0
+    top: 160px
     height: 565px
     position: absolute
     display: block
     z-index: 2
+    &--little
+      display: none
   &__iphone
-    left: 50%
-    top: 205px
+    left: 55%
+    top: 300px
     height: 445px
     position: absolute
     display: block
     z-index: 3
   &__ovals
-    right: -8%
+    right: 0
     top: 180px
     width: 540px
     height: 540px
