@@ -16,14 +16,20 @@
 </head>
 
 <body>
+  <a href="#" class="button-up"><img src="img/icon-arrow-next.svg" alt="Icon: button-up" class="button-up__img"></a>
   <header>
-    <div class="container">
+    <div class="container container--mobile-fixed">
       <div class="navbar">
         <a href="index.html" class="navbar__logo"><img src="img/logo.png" alt="Icon: logo" /></a>
+        <div class="menu-button navbar__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </div>
         <div class="navbar__text-container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Домой</a>
+              <a href="index.html" class="navbar-menu__link">Домой</a>
             </li>
             <li class="navbar-menu__item">
               <div class="navbar-menu__link-arrow">
@@ -75,39 +81,58 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
-
   <div class="thanks">
     <div class="container">
       <div class="thanks-wrapper">
         <h3 class="thanks__title title-section">Спасибо!</h3>
-        <p class="thanks__text subtitle-section">Ваши данные были отправлены</p>
+        <p class="thanks__text subtitle-section">
+          Ваши данные были отправлены
+        </p>
         <a href="index.html" class="thanks__button button-title">Вернуться на главную</a>
       </div>
     </div>
     <!-- /.container -->
   </div>
-  <!-- /.social -->
+  <!-- /.thanks -->
+  
+  
+  
     
+      
+      
+
+ 
+    <button class=" our-project__slider-arrow--prev">
+      <img src="img/icon-arrow-next.svg" alt="icon: arrow-prev" />
+    </button>
+
+      
+    
+  
+
+  
+  
+  
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
         <div class="footer__info footer-info">
-          <a href="" class="footer-info__logo-link"><img src="img/footer-logo.png" alt="Icon: footer-logo"
+          <a href="index.html" class="footer-info__logo-link"><img src="img/footer-logo.png" alt="Icon: footer-logo"
               class="footer-info__logo" /></a>
           <p class="footer-info__text">
             Создайте современный и креативный веб-сайт с crealand
           </p>
           <div class="footer-info__social">
-            <a href="" class="footer-info__social-link"><img src="img/small-icon-google.png" alt="icon: google"
-                class="footer-info__social-icon" /></a>
-            <a href="" class="footer-info__social-link"><img src="img/small-icon-twitter.png" alt="icon: twitter"
-                class="footer-info__social-icon" /></a>
-            <a href="" class="footer-info__social-link"><img src="img/smal-icon-instagram.png" alt="icon: instagram"
-                class="footer-info__social-icon" /></a>
-            <a href="" class="footer-info__social-link"><img src="img/smal-icon-linkedin.png" alt="icon: linkedin"
-                class="footer-info__social-icon" /></a>
-            <a href="" class="footer-info__social-link"><img src="img/smal-icon-youtube.png" alt="icon: youtube"
-                class="footer-info__social-icon" /></a>
+            <a href="https://www.google.com/" class="footer-info__social-link" target="_blank"><img
+                src="img/small-icon-google.png" alt="icon: google" class="footer-info__social-icon" /></a>
+            <a href="https://twitter.com/" class="footer-info__social-link" target="_blank"><img
+                src="img/small-icon-twitter.png" alt="icon: twitter" class="footer-info__social-icon" /></a>
+            <a href="https://www.instagram.com/" class="footer-info__social-link" target="_blank"><img
+                src="img/smal-icon-instagram.png" alt="icon: instagram" class="footer-info__social-icon" /></a>
+            <a href="https://www.linkedin.cn/" class="footer-info__social-link" target="_blank"><img
+                src="img/smal-icon-linkedin.png" alt="icon: linkedin" class="footer-info__social-icon" /></a>
+            <a href="https://www.youtube.com/" class="footer-info__social-link" target="_blank"><img
+                src="img/smal-icon-youtube.png" alt="icon: youtube" class="footer-info__social-icon" /></a>
           </div>
           <!-- /.footer-info__social -->
         </div>
@@ -202,6 +227,7 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+
   <div class="modal" id="modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
@@ -211,14 +237,13 @@
       </a>
       <h3 class="modal__title modal__title--mb-3">Заполните форму</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required
-          minlength="18">
-        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <input type="text" class="input modal__input" placeholder="Ваше ФИО*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input phone" placeholder="Телефон*" name="phone" required minlength="18">
+        <input type="email" class="input modal__input" placeholder="E-mail*" name="email" required>
+        <textarea class="message modal__message" placeholder="Комментарий" name="message"></textarea>
         <div class="modal__footer-wrapper">
           <button class="button modal__button" type="submit">Отправить</button>
-          <span class="modal__info">* Required Fields</span>
+          <span class="modal__info">* Обязательные поля</span>
         </div>
       </form>
     </div>

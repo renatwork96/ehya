@@ -9,6 +9,8 @@
       width: 290px
   .slider-card
     width: 300px
+    &__link
+      height: 350px
     &__subtitle
       margin-bottom: 8px
     &__img
@@ -147,13 +149,28 @@
         transform: none
 
 @media ( max-width: 768px)
+  body
+    padding-top: 100px
   .container
     max-width: 576px
+    &--mobile-fixed
+      position: fixed
+      right: 0
+      left: 0
+      top: 0
+      z-index: 101
+      background-color: $white
+      min-width: 100%
+      max-width: 100%
+      width: 100%
   .title-wrapper__content
     max-width: 576px
     width: 92%
 
   .navbar
+    width: 92%
+    max-width: 576px
+    margin: auto
     &-menu
       &__item
         margin-right: 0
@@ -165,6 +182,7 @@
 
     &__text-container
       display: none
+      min-width: 270px
       &--visible
         padding-top: 40px
         display: flex
@@ -178,7 +196,7 @@
         right: 0
         left: 0
         bottom: 0
-        z-index: 99
+        z-index: 101
         background-color: $gray-light-text
         overflow: auto
 
@@ -186,6 +204,10 @@
       width: 100px
     &__menu-button
       display: flex
+  .images-block__macbook
+    display: none
+    &--little
+      display: block
   .title-wrapper
     width: 100%
     max-width: 100%
@@ -238,6 +260,9 @@
       right: 425px
       top: 12%
       height: 30%
+  .slider-card
+    &__link
+      height: 300px
   .partners
     &-wrapper
       align-items: center
@@ -379,8 +404,12 @@
       padding: 33px 60px
 
 @media ( max-width: 576px)
+  body
+    padding-top: 70px
   .navbar
     height: 70px
+    &__text-container--visible
+      top: 70px
   .title-wrapper
     padding-top: 30px
   .title
@@ -406,6 +435,7 @@
       width: auto
       font-size: 28px
       line-height: 29px
+      width: 90%
     &__info
       width: auto
       font-size: 13px
@@ -582,8 +612,13 @@
       padding: 33px 60px
 
 @media ( max-width: 480px) and ( min-width: 320px)
-  .container, .title-wrapper__content
+  .container
     min-width: 270px
+  .navbar__menu-button
+    margin-right: 12px
+    margin-bottom: 5px
+  .title-wrapper__content
+    max-width: 87%
 
   .title
     margin-bottom: 7px
@@ -602,7 +637,7 @@
     &__macbook
 
     &__iphone
-      right: 210px
+      right: 245px
 
     &__ovals
       top: -65px

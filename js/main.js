@@ -55,12 +55,12 @@
       var arrowButtonNext = $(".our-project__slider-arrow--next");
       arrowButtonPrev.removeClass("our-project__slider-arrow--noactiv");
       arrowButtonNext.removeClass("our-project__slider-arrow--noactiv");
-    }     
+    }       
   });
 
   if ( swiper.activeIndex == 0 ) {
     document.querySelector(".our-project__slider-arrow--prev").classList.toggle('our-project__slider-arrow--noactiv');
-  }
+  } 
 
 
 
